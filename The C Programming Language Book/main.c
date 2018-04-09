@@ -1,15 +1,26 @@
-//
-//  main.c
-//  The C Programming Language Book
-//
-//  Created by Stefanos Mitropoulos on 28/09/2017.
-//  Copyright © 2017 Stefanos Mitropoulos. All rights reserved.
-//
-
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+void strcat1(char *s, char *t){
+	while(*s)
+		s++;
+
+	while ((*s++=*t++))
+		;
+}
+
+int main() {
+
+//	char string1[20]="What a ";
+//	char string2[20]="Penis!";
+//	strcat1(string1,string2);
+//	printf("%s",string1);
+
+	char *string4="Penis!";
+	char string3[20]="Peos!";
+
+	printf("%s",string4);
+
+	;
+
+	return 0;
 }
